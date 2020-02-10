@@ -33,4 +33,5 @@ phases:
 #       - export AWS_EXPIRATION=$(echo ${CREDENTIALS} | jq -r '.Credentials.Expiration')
 #       - aws eks update-kubeconfig --name $EKS_CLUSTER_NAME
 #       - kubectl apply -f hello-k8s.yml
+      - aws configure
       - kubectl get nodes
